@@ -1,20 +1,8 @@
-.headerTitle {
-  font: small-caption 28pt Neue Helvetica;
-  margin: 0px;
-  /* border: 0px; */
-  /* color: #BB1F25;   */
-}
+
 .headerText {
   font: italic 9pt Baskerville;
   color: #bb1f25;
   margin-bottom:0px;
 }
-.hrTop {  
-  border-top: 2px solid black;
-  margin:1px;
-}
-.hrBottom {
-  border: 3px solid black;
-  border-top:0px;
-  margin:1px;
-}
+
+

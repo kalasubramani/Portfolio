@@ -3,113 +3,99 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Bootstrap portfolio demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- <h1>Hello, world!</h1> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <section class="header">
-      <div class="container text-center pt-4">
-        <div class="row justify-content-md-center">
-          <div class="col">
-            <img src="./public/assets/Company-Logo.png" class="col-3" />
-          </div>
-          <div class="col-5"></div>
-          <div class="container col">
-            <div class="row">
-              <div class="col">
-                <span><b>HELLO, I'M KALA</b></span
-                ><br />
-              </div>
-              <div class="row">
-                <div class="col">
-                  <span>Web Designer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section id="header" class="d-flex justify-content-around pt-4 px-6">
+      <div>
+        <img src="./public/assets/Company-Logo.png" class="col-3" />
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h1 class="fs-5 fw-bold mb-0">HELLO, I'M KALA</h1>
+        <h2 class="fs-5 fw-light mb-0">Web Designer</h2>
       </div>
     </section>
-    <section class="mainImg" style="height: 18em; width: 100%;">
-      <!-- h-50 d-inline-block -->
-      <!-- <div class="p-5 mb-4 bg-body-tertiary rounded-3"> -->
-      <!-- <div class="row row-cols-lg-1 mb-4 mt-4 g-0"> -->
-      <!-- <img src="./public/assets/hero1.jpg" class="object-fit-sm-contain"/> -->
-      <!-- </div> -->
-      <!-- </div> -->
-      <!-- <div class=""> -->
-      <!-- <div class=""> -->
-      <!-- <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-          <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-          <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
-      <!-- <div class="h-25 d-inline-block">
-            <img src="./public/assets/hero1.jpg" class="container-fluid p-0" />
-          </div> -->
-      <!-- </div> -->
-      <!-- </div> -->
-      <div style="height: 100%; width: 100%" class="pt-4">
-        <div class="h-100 d-inline-block w-100" style="width: 100%">
+    <section id="mainContainer" class="container-fluid px-0">
+      <section id="mainImg" class="my-4">
+        <div class="ratio ratio-21x9">
           <img
             src="./public/assets/hero1.jpg"
-            class="h-100"
-            style="width: 100%"
+            class="img-fluid object-fit-cover"
           />
         </div>
-       
-      </div>
-    </section>
-    <section class="porfolio container">
-      <div class="p-3 text-center">
-        <span><b>PORTFOLIO</b></span>
-      </div>
-      <div class="container text-center mx-3 px-5">
-        <div class="row row-cols-3 mx-4 px-5">
-          <div class="" >
-            <hr class="hrTop"/>
-            <p class="headerTitle">TECHNOLINE</p>
-            <p class="headerText">technoline.com</p>
-            <hr class="hrBottom"/>
-            <div class="p-0" style="width: 100%;height: 98%;margin-top: 15px;">             
-              <img src="./public/assets/company photo1.jpg" class="img-fluid "/>
+      </section>
+      <section id="porfolioContainer" class="container">
+        <div class="p-3 text-center">
+          <h2 class="fs-5 fw-bold mb-0">PORTFOLIO</h2>
+        </div>
+        <div
+          id="portfoliolistContainer"
+          class="container row row-cols-3 text-center mx-3 mb-4 px-5"
+        >
+          <div id="technolineContainer">
+            <div class="lh-1">
+              <hr class="opacity-100 border border-black m-1" />
+              <h3 class="fs-6 fw-normal m-0 text-uppercase">technoline</h3>
+              <p class="headerText">technoline.com</p>
+              <hr class="opacity-100 border border-black border-2 m-1" />
+            </div>
+            <div class="ratio ratio-16x9 mt-3">
+              <img src="./public/assets/company photo1.jpg" class="img-fluid" />
             </div>
           </div>
-          <div class="mx-0" style="width: 18rem;height: 18rem;">
-            <hr class="hrTop"/>
-            <p class="headerTitle">MAJESTIQUE</p>
+          <div id="majestiqueContainer">
+            <hr class="opacity-100 border border-black m-1" />
+            <h3 class="fs-6 fw-normal m-0 text-uppercase">majestique</h3>
             <p class="headerText">majestique.com</p>
-            <hr class="hrBottom"/>
-            <div class="p-0" style="width: 100%;height: 100%;margin-top: 15px;">             
-              <img src="./public/assets/company photo2.jpg" class="img-fluid"/>
+            <hr class="opacity-100 border border-black border-2 m-1" />
+            <div
+              class="ratio ratio-16x9 mt-3">
+              <img src="./public/assets/company photo2.jpg" class="img-fluid" />
             </div>
           </div>
-          <div class="mx-0" style="width: 18rem;height: 18rem;">
-            <hr class="hrTop"/>
-            <p class="headerTitle">SILVERZIM</p>
+          <div id="silverzimContainer">
+            <hr class="opacity-100 border border-black m-1" />
+            <h3 class="fs-6 fw-normal m-0 text-uppercase">silverzim</h3>
             <p class="headerText">silverzim.com</p>
-            <hr class="hrBottom"/>
-            <div class="p-0" style="width: 100%;height: 100%;margin-top: 15px;">             
-              <img src="./public/assets/company photo3.jpeg" class="img-fluid"/>
+            <hr class="opacity-100 border border-black border-2 m-1" />
+            <div class="ratio ratio-16x9 mt-3">
+              <img
+                src="./public/assets/company photo3.jpeg"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-    <section class="footer container">
-      <div class="p-3 text-center">
-        <span>2024 <a href="https://www.linkedin.com/in/kala-subramani/" target="_blank">Kala's Web Dev</a> All rights reserved.</span>
-      </div>     
+    <section id="footerContainer" class="container-fluid px-0">
+      <div
+        class="py-4 p-3 bg-dark bg-gradient text-white fw-lighter text-center"
+      >
+        <small class="text-capitalize">
+          © 2024
+          <a
+            href="https://www.linkedin.com/in/kala-subramani/"
+            target="_blank"
+            class="text-white"
+          >
+            Kala's Web Dev</a
+          >
+          all rights reserved.</small
+        >
+      </div>
     </section>
   </body>
 </html>
